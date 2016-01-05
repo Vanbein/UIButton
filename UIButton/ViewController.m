@@ -98,19 +98,18 @@
     
     //显示Label
     [self.view addSubview:_label];
-    
-    
-    
-}
-- (void)buttonDidClicked:(UIButton *)sender{
-    //NSLog(@"%@ 好痛",sender.titleLabel.text);
-    self.label.text = sender.titleLabel.text;
-}
 
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)buttonDidClicked:(UIButton *)sender{
+    self.label.text = sender.titleLabel.text;
+}
+
 
 @end
